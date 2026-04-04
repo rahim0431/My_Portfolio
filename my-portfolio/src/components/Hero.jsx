@@ -169,7 +169,7 @@ const Hero = () => {
          <div className="w-full h-full rounded-full bg-[#0B0F19] overflow-hidden relative border-[4px] border-[#0B0F19]">
 
             <img 
-                src="/me.jpg" 
+                src={`${import.meta.env.BASE_URL}me.jpg`} 
                 alt="Abdul Rahim"
                 loading="eager"
                 decoding="async"

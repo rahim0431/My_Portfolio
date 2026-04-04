@@ -7,10 +7,10 @@ const skillCards = [
     title: 'Frontend',
     gradient: 'from-[#3B82F6]/80 via-[#22D3EE]/40 to-[#7C3AED]/70',
     items: [
-      { name: 'React', level: 'Advanced', iconUrl: '/skills/react.svg' },
-      { name: 'Tailwind CSS', level: 'Advanced', iconUrl: '/skills/tailwind.svg' },
-      { name: 'HTML', level: 'Advanced', iconUrl: '/skills/html5.svg' },
-      { name: 'JavaScript', level: 'Advanced', iconUrl: '/skills/javascript.svg' },
+      { name: 'React', level: 'Advanced', iconUrl: `${import.meta.env.BASE_URL}skills/react.svg` },
+      { name: 'Tailwind CSS', level: 'Advanced', iconUrl: `${import.meta.env.BASE_URL}skills/tailwind.svg` },
+      { name: 'HTML', level: 'Advanced', iconUrl: `${import.meta.env.BASE_URL}skills/html5.svg` },
+      { name: 'JavaScript', level: 'Advanced', iconUrl: `${import.meta.env.BASE_URL}skills/javascript.svg` },
     ],
   },
   {
@@ -21,29 +21,29 @@ const skillCards = [
         name: 'Node.js',
         level: 'Advanced',
         iconStack: {
-          base: '/skills/nodejs.svg',
-          mark: '/skills/nodejs-2.svg',
+          base: `${import.meta.env.BASE_URL}skills/nodejs.svg`,
+          mark: `${import.meta.env.BASE_URL}skills/nodejs-2.svg`,
           iconClass: 'brightness-150 saturate-150',
         },
       },
-      { name: 'Laravel', level: 'Intermediate', iconUrl: '/skills/laravel.svg' },
-      { name: 'Python', level: 'Intermediate', iconUrl: '/skills/python.svg' }
+      { name: 'Laravel', level: 'Intermediate', iconUrl: `${import.meta.env.BASE_URL}skills/laravel.svg` },
+      { name: 'Python', level: 'Intermediate', iconUrl: `${import.meta.env.BASE_URL}skills/python.svg` }
     ],
   },
   {
     title: 'Database',
     gradient: 'from-[#06B6D4]/80 via-[#22D3EE]/40 to-[#38BDF8]/70',
     items: [
-      { name: 'MongoDB', level: 'Advanced', iconUrl: '/skills/mongodb.svg' },
-      { name: 'MySQL', level: 'Advanced', iconUrl: '/skills/mysql.svg', iconClass: 'brightness-150 saturate-150' },
+      { name: 'MongoDB', level: 'Advanced', iconUrl: `${import.meta.env.BASE_URL}skills/mongodb.svg` },
+      { name: 'MySQL', level: 'Advanced', iconUrl: `${import.meta.env.BASE_URL}skills/mysql.svg`, iconClass: 'brightness-150 saturate-150' },
     ],
   },
   {
     title: 'Tools',
     gradient: 'from-[#8B5CF6]/80 via-[#7C3AED]/40 to-[#60A5FA]/70',
     items: [
-      { name: 'Git', level: 'Advanced', iconUrl: '/skills/git.svg' },
-      { name: 'VS Code', level: 'Advanced', iconUrl: '/skills/vscode.svg' },
+      { name: 'Git', level: 'Advanced', iconUrl: `${import.meta.env.BASE_URL}skills/git.svg` },
+      { name: 'VS Code', level: 'Advanced', iconUrl: `${import.meta.env.BASE_URL}skills/vscode.svg` },
     ],
   },
 ];
