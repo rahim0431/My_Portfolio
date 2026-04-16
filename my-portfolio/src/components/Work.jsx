@@ -22,6 +22,7 @@ const projects = [
     ],
     // stats: ['98 Lighthouse', '1.2s load', 'RBAC'],
     featured: true,
+    liveUrl: 'https://fullstack-chat-app-bice.vercel.app', // TODO: Add live demo URL for Chat App
   },
   {
     title: 'Student Management System',
@@ -31,6 +32,7 @@ const projects = [
       'A web-based system designed to manage student data efficiently, including records, updates, and organization of academic information',
     tech: ['HTML', 'CSS', 'JavaScript','Laravel','MySql'],
     // stats: ['<120ms latency', 'Multi-room'],
+    liveUrl: '#', // TODO: Add live demo URL for Student Management System
   },
   {
     title: 'Personal Portfolio',
@@ -40,6 +42,7 @@ const projects = [
       'A modern and responsive personal portfolio website showcasing projects, skills, and contact information with a clean and professional design.',
     tech: ['React JS','Tailwind', 'Framer Motion'],
     // stats: ['Design tokens', 'Dark UI'],
+    liveUrl: '#', // TODO: Add live demo URL for Personal Portfolio
   },
 ];
 
@@ -137,10 +140,15 @@ const Work = () => {
                   🚀 View Project Details
                   <ArrowUpRight size={16} className="transition-transform duration-300 group-hover/cta:translate-x-1" />
                 </button>
-                <button className="group/cta inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white/80 hover:bg-white/10 transition-colors">
+                <a 
+                  href={featured.liveUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group/cta inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white/80 hover:bg-white/10 transition-colors"
+                >
                   <ExternalLink size={16} className="transition-transform duration-300 group-hover/cta:translate-x-0.5" />
                    Live Demo
-                </button>
+                </a>
               </div>
             </div>
 
@@ -243,10 +251,15 @@ const Work = () => {
                     <span key={stat}>{stat}</span>
                   ))}
                 </div> */}
-                <button className="group/cta inline-flex items-center gap-2 text-sm text-white/80 hover:text-white transition-colors">
+                <a 
+                  href={project.liveUrl}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group/cta inline-flex items-center gap-2 text-sm text-white/80 hover:text-white transition-colors"
+                >
                   View
                   <ExternalLink size={14} className="transition-transform duration-300 group-hover/cta:translate-x-0.5" />
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}
